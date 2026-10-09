@@ -1,0 +1,12 @@
+.atributo{
+    display: flex;
+    justify-content: center;
+    
+    .ativo {
+        scale: 1.2;
+    }
+    .inativo {
+        filter:grayscale(100%);
+        opacity: 0.4;
+    }
+}
