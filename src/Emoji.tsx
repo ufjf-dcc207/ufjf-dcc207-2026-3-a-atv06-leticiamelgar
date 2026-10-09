@@ -34,6 +34,28 @@ export default function Emoji() {
         console.log("Status: ", status);
 
     }
+
+    function toNext(){
+        switch(status){
+            case "happy":
+            setStatus("sick");
+            break;
+
+            case "sick":
+            setStatus("dead");
+            break;
+
+            case "dead":
+            setStatus("happy");
+            break;
+
+            default:
+            setStatus("happy");
+            break;
+
+        }
+
+    }
     console.log("Desenhando...")
     console.log("Status:", status);
     return (
@@ -43,6 +65,7 @@ export default function Emoji() {
                 <button onClick={happyClick}>Happy</button>
                 <button onClick={sickClick}>Sick</button>
                 <button onClick={deadClick}>Dead</button>
+                <button onClick={toNext}>Ciclo</button>
             </div>
         </>
     );
