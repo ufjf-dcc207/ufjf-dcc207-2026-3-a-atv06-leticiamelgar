@@ -1,11 +1,14 @@
 import { useState } from "react";
 import "./Emoji.css";
+import "./Emoji.css";
 import Atributo from "./Atributo";
 import type { AtributoType, EMOJI_KEYS, EmojiType } from "./types";
 
 const EMOJI_MAP = new Map<EMOJI_KEYS, string>([
     ["happy", "🙂"],
+    ["happy", "🙂"],
     ["sick", "🤢"],
+    ["dead", "😵"],
     ["dead", "😵"],
 ]);
 
@@ -87,5 +90,6 @@ export default function Emoji() {
                 <button onClick={cicloClick}>Ciclo</button>
             </div>
         </div>
+        
     );
 }
